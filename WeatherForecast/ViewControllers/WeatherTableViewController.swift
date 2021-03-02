@@ -34,7 +34,6 @@ final class WeatherTableViewController: UIViewController, Storyboarded {
         configNavigationBarTitle()
     }
 
-        
     private func addBackgroundGradient() {
         let startColor = UIColor(red: 0.02, green: 0.03, blue: 0.24, alpha: 1.00)
         let endColor = UIColor(red: 0.50, green: 0.31, blue: 0.67, alpha: 1.00)

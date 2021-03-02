@@ -32,7 +32,7 @@
                                 <rect key="frame" x="82" y="82" width="250" height="250"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-Qg-6lw">
-                                        <rect key="frame" x="24" y="24.333333333333329" width="40" height="37"/>
+                                        <rect key="frame" x="24" y="20.333333333333329" width="40" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="h6T-F1-i9a">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
@@ -44,7 +44,7 @@
                                         <imageReference key="image" image="cloud.rain" catalog="system" symbolScale="small" renderingMode="template"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23c" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yo-98-DoH">
-                                        <rect key="frame" x="171" y="18" width="56" height="41"/>
+                                        <rect key="frame" x="170" y="18" width="56" height="41"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="34"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -147,12 +147,12 @@
                                     </constraint>
                                     <constraint firstItem="08Q-Kx-P8x" firstAttribute="leading" secondItem="Bih-xr-LkB" secondAttribute="leading" constant="14" id="bgu-Er-lez"/>
                                     <constraint firstItem="vug-bP-gEe" firstAttribute="leading" secondItem="Bih-xr-LkB" secondAttribute="leading" constant="14" id="cjb-GD-qzz"/>
-                                    <constraint firstAttribute="trailing" secondItem="9Yo-98-DoH" secondAttribute="trailing" constant="23" id="hKz-dY-5VY"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Yo-98-DoH" secondAttribute="trailing" constant="24" id="hKz-dY-5VY"/>
                                     <constraint firstItem="CcZ-WR-sAH" firstAttribute="centerX" secondItem="Bih-xr-LkB" secondAttribute="centerX" id="jKM-Db-32s"/>
                                     <constraint firstItem="PTL-z3-xEf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fbJ-Eq-H22" secondAttribute="trailing" constant="8" symbolic="YES" id="jpf-yM-Esm"/>
                                     <constraint firstItem="PTL-z3-xEf" firstAttribute="bottom" secondItem="fbJ-Eq-H22" secondAttribute="bottom" id="lHJ-mE-wME"/>
                                     <constraint firstAttribute="trailing" secondItem="vug-bP-gEe" secondAttribute="trailing" constant="14" id="log-RK-wfJ"/>
-                                    <constraint firstItem="dNQ-Qg-6lw" firstAttribute="top" secondItem="Bih-xr-LkB" secondAttribute="top" constant="22" id="mWo-Go-9yI"/>
+                                    <constraint firstItem="dNQ-Qg-6lw" firstAttribute="top" secondItem="Bih-xr-LkB" secondAttribute="top" constant="18" id="mWo-Go-9yI"/>
                                 </constraints>
                             </view>
                         </subviews>
