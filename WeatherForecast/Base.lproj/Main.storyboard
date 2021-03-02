@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zge-bJ-4Gk">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Weather Details View Controller-->
+        <scene sceneID="aB0-yA-40H">
+            <objects>
+                <viewController storyboardIdentifier="WeatherDetailsViewController" id="zQb-4A-SFI" customClass="WeatherDetailsViewController" customModule="WeatherForecast" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BWl-48-66D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bih-xr-LkB">
+                                <rect key="frame" x="82" y="82" width="250" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-Qg-6lw">
+                                        <rect key="frame" x="24" y="24.333333333333329" width="40" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="h6T-F1-i9a">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="40" id="pgF-le-Zwe">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                        </constraints>
+                                        <imageReference key="image" image="cloud.rain" catalog="system" symbolScale="small" renderingMode="template"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23c" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yo-98-DoH">
+                                        <rect key="frame" x="171" y="18" width="56" height="41"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="44"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vug-bP-gEe">
+                                        <rect key="frame" x="14" y="79" width="222" height="29"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08Q-Kx-P8x">
+                                        <rect key="frame" x="14" y="110" width="222" height="18"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIW-zC-pOB">
+                                        <rect key="frame" x="63.666666666666657" y="152" width="123" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcZ-WR-sAH">
+                                                <rect key="frame" x="8" y="6" width="107" height="18"/>
+                                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="22"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.011764705882352941" green="0.35686274509803922" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="CcZ-WR-sAH" secondAttribute="trailing" constant="8" id="4o6-gB-kET"/>
+                                            <constraint firstItem="CcZ-WR-sAH" firstAttribute="centerY" secondItem="uIW-zC-pOB" secondAttribute="centerY" id="4p1-AJ-NTg"/>
+                                            <constraint firstAttribute="height" constant="30" id="JmK-I2-ACn">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                            </constraint>
+                                            <constraint firstItem="CcZ-WR-sAH" firstAttribute="leading" secondItem="uIW-zC-pOB" secondAttribute="leading" constant="8" id="TJF-ZI-ogz"/>
+                                            <constraint firstAttribute="width" constant="123" id="tbb-d0-2mP">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-Eq-H22">
+                                        <rect key="frame" x="71" y="204" width="35.666666666666657" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="UYL-Qr-X7X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTL-z3-xEf">
+                                        <rect key="frame" x="143.33333333333334" y="204" width="35.666666666666657" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="gsc-SZ-YFX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="5aJ-nw-WQk">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                    <constraint firstItem="fbJ-Eq-H22" firstAttribute="top" secondItem="uIW-zC-pOB" secondAttribute="bottom" constant="22" id="6EL-T3-Vat">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="fbJ-Eq-H22" secondAttribute="bottom" constant="20" symbolic="YES" id="7JO-mk-nFk"/>
+                                    <constraint firstAttribute="trailing" secondItem="PTL-z3-xEf" secondAttribute="trailing" constant="71" id="7mx-um-yyg"/>
+                                    <constraint firstItem="vug-bP-gEe" firstAttribute="top" secondItem="Bih-xr-LkB" secondAttribute="top" constant="79" id="IWz-4l-agX"/>
+                                    <constraint firstItem="9Yo-98-DoH" firstAttribute="top" secondItem="Bih-xr-LkB" secondAttribute="top" constant="18" id="LaS-9A-ka8"/>
+                                    <constraint firstItem="08Q-Kx-P8x" firstAttribute="top" secondItem="vug-bP-gEe" secondAttribute="bottom" constant="2" id="M65-yr-Xtm">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="250" id="MDg-Uw-83Y">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                    <constraint firstItem="9Yo-98-DoH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dNQ-Qg-6lw" secondAttribute="trailing" constant="8" symbolic="YES" id="NWf-gf-FWG"/>
+                                    <constraint firstItem="fbJ-Eq-H22" firstAttribute="leading" secondItem="Bih-xr-LkB" secondAttribute="leading" constant="71" id="Rgm-sT-NcG"/>
+                                    <constraint firstAttribute="trailing" secondItem="08Q-Kx-P8x" secondAttribute="trailing" constant="14" id="Uoh-1p-3aa"/>
+                                    <constraint firstItem="dNQ-Qg-6lw" firstAttribute="leading" secondItem="Bih-xr-LkB" secondAttribute="leading" constant="24" id="VJH-IJ-yz1">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                    </constraint>
+                                    <constraint firstItem="08Q-Kx-P8x" firstAttribute="leading" secondItem="Bih-xr-LkB" secondAttribute="leading" constant="14" id="bgu-Er-lez"/>
+                                    <constraint firstItem="vug-bP-gEe" firstAttribute="leading" secondItem="Bih-xr-LkB" secondAttribute="leading" constant="14" id="cjb-GD-qzz"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Yo-98-DoH" secondAttribute="trailing" constant="23" id="hKz-dY-5VY"/>
+                                    <constraint firstItem="CcZ-WR-sAH" firstAttribute="centerX" secondItem="Bih-xr-LkB" secondAttribute="centerX" id="jKM-Db-32s"/>
+                                    <constraint firstItem="PTL-z3-xEf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fbJ-Eq-H22" secondAttribute="trailing" constant="8" symbolic="YES" id="jpf-yM-Esm"/>
+                                    <constraint firstItem="PTL-z3-xEf" firstAttribute="bottom" secondItem="fbJ-Eq-H22" secondAttribute="bottom" id="lHJ-mE-wME"/>
+                                    <constraint firstAttribute="trailing" secondItem="vug-bP-gEe" secondAttribute="trailing" constant="14" id="log-RK-wfJ"/>
+                                    <constraint firstItem="dNQ-Qg-6lw" firstAttribute="top" secondItem="Bih-xr-LkB" secondAttribute="top" constant="22" id="mWo-Go-9yI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eeM-fk-CyK"/>
+                        <color key="backgroundColor" red="0.22745098039215686" green="0.45098039215686275" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bih-xr-LkB" firstAttribute="top" secondItem="eeM-fk-CyK" secondAttribute="top" constant="82" id="WO7-BV-hi4"/>
+                            <constraint firstItem="Bih-xr-LkB" firstAttribute="centerX" secondItem="eeM-fk-CyK" secondAttribute="centerX" id="ct9-I1-E3u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="vug-bP-gEe" id="FgV-fX-vv2"/>
+                        <outlet property="containerView" destination="Bih-xr-LkB" id="7xU-gJ-BDQ"/>
+                        <outlet property="feelLikeContainerView" destination="uIW-zC-pOB" id="rsm-iE-wHW"/>
+                        <outlet property="feelLikeLabel" destination="CcZ-WR-sAH" id="1RM-3t-8e8"/>
+                        <outlet property="maxTemperatureLabel" destination="fbJ-Eq-H22" id="jq8-re-gj9"/>
+                        <outlet property="minTemperatureLabel" destination="PTL-z3-xEf" id="Fft-da-1eA"/>
+                        <outlet property="temperatureLabel" destination="9Yo-98-DoH" id="B8w-mz-rVf"/>
+                        <outlet property="weatherDescriptionLabel" destination="08Q-Kx-P8x" id="jN7-2z-YMI"/>
+                        <outlet property="weatherImageView" destination="dNQ-Qg-6lw" id="0sc-kJ-8Rk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QS8-0R-na4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3297.1014492753625" y="78.348214285714278"/>
+        </scene>
+        <!--Weather Table View Controller-->
+        <scene sceneID="or5-8V-oIO">
+            <objects>
+                <viewController storyboardIdentifier="WeatherTableViewController" id="duf-fL-Zuo" customClass="WeatherTableViewController" customModule="WeatherForecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJD-tp-hpK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XxP-3t-xAU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="726"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="77" id="vGC-yI-1vy" customClass="WeatherTableViewCell" customModule="WeatherForecast" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vGC-yI-1vy" id="Ucy-75-AZT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="duf-fL-Zuo" id="Dx3-ai-1md"/>
+                                    <outlet property="delegate" destination="duf-fL-Zuo" id="1gq-Pu-USK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eUD-rb-SJd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XxP-3t-xAU" firstAttribute="bottom" secondItem="eUD-rb-SJd" secondAttribute="bottom" constant="34" id="9RH-2X-g9X"/>
+                            <constraint firstItem="XxP-3t-xAU" firstAttribute="leading" secondItem="eUD-rb-SJd" secondAttribute="leading" id="DKs-Tp-Bk5"/>
+                            <constraint firstItem="eUD-rb-SJd" firstAttribute="trailing" secondItem="XxP-3t-xAU" secondAttribute="trailing" id="Fso-3x-rZj"/>
+                            <constraint firstItem="XxP-3t-xAU" firstAttribute="top" secondItem="eUD-rb-SJd" secondAttribute="top" id="NHX-hN-CBt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OuD-HL-En7"/>
+                    <connections>
+                        <outlet property="tableView" destination="XxP-3t-xAU" id="t8m-Rc-OEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpH-0w-9wU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442.0289855072465" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C4j-Cm-hFD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zge-bJ-4Gk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WBW-Ir-Jlc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="duf-fL-Zuo" kind="relationship" relationship="rootViewController" id="Vdg-cH-kGg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qf3-P9-bCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.8840579710145" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud.rain" catalog="system" width="128" height="125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
