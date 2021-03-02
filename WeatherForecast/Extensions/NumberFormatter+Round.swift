@@ -8,7 +8,7 @@
 import Foundation
 
 extension NumberFormatter {
-    func format(temperature: Double) -> String {
+    static func format(temperature: Double) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = NumberFormatter.Style.decimal
         formatter.roundingMode = NumberFormatter.RoundingMode.halfUp

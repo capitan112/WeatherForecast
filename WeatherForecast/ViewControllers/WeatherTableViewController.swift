@@ -42,7 +42,15 @@ final class WeatherTableViewController: UIViewController, Storyboarded {
     }
 
     private func configNavigationBarTitle() {
-        title = "Cities Weather"
+        let navLabel = UILabel()
+        navLabel.textAlignment = .center
+        guard let font = UIFont(name: "Lato-Regular", size: 18) else { return }
+        let navTitle = NSMutableAttributedString(string: "Cities Weather",
+                                                 attributes:[
+                                                    NSAttributedString.Key.foregroundColor: UIColor.white,
+                                                    NSAttributedString.Key.font: font])
+        navLabel.attributedText = navTitle
+        self.navigationItem.titleView = navLabel
     }
     
     private func configNavigationBar() {

@@ -35,7 +35,6 @@ final class WeatherTableViewModelCell: WeatherTableViewModelCellType {
     }
 
     private func format(temperature: Double) -> String {
-        let formatter = NumberFormatter()
-        return formatter.format(temperature: temperature)
+        return NumberFormatter.format(temperature: temperature)
     }
 }

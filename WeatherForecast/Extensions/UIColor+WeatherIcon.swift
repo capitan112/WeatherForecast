@@ -30,8 +30,8 @@ extension UIColor {
                       "50n": (UIColor(hex: "#466fcd"), UIColor(hex: "#0c1336"))
                     ]
         
-        if let firstColor = colors[iconKey]?.0, let secondColor = colors[iconKey]?.1 {
-            return (firstColor, secondColor)
+        if let startColor = colors[iconKey]?.0, let endColor = colors[iconKey]?.1 {
+            return (startColor, endColor)
         }
         
         let startColor = UIColor(red: 0.35, green: 0.58, blue: 0.73, alpha: 1.00)

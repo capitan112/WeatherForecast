@@ -13,7 +13,6 @@ protocol NetworkProtocol {
 }
 
 final class NetworkService: NetworkProtocol {
-    private let imageCache = NSCache<AnyObject, AnyObject>()
 
     func request(urlString: String, completion: @escaping (Result<Data, Error>) -> Void) {
         let url = urlFromParameters(cities: urlString)
@@ -51,7 +50,7 @@ final class NetworkService: NetworkProtocol {
         })
     }
 
-    fileprivate func urlFromParameters(cities: String) -> URL {
+    private func urlFromParameters(cities: String) -> URL {
         var components = URLComponents()
         components.scheme = RequestConstant.Server.APIScheme
         components.host = RequestConstant.Server.APIHost
