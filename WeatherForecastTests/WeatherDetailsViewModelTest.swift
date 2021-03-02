@@ -32,8 +32,9 @@ class WeatherDetailsViewModelTest: XCTestCase {
 
         // Then
 
-        let expectedStartColour = UIColor(red: 0.19, green: 0.47, blue: 0.80, alpha: 1.00)
-        let expectedEndColour = UIColor(red: 0.26, green: 0.32, blue: 0.36, alpha: 1.00)
+        let expectedStartColour = UIColor(hex: "#466fcd")!
+        let expectedEndColour = UIColor(hex: "#8aa3b4")!
+        
         XCTAssertEqual(subject.weatherDetails.cityName, "London")
         XCTAssertEqual(subject.weatherDetails.temperature, "10c")
         XCTAssertEqual(subject.weatherDetails.feelLike, "Feels like 5c")

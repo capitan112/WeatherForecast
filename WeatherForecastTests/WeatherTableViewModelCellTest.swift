@@ -35,8 +35,8 @@ class WeatherTableViewModelCellTest: XCTestCase {
         XCTAssertEqual(subject.cityName, "London")
         XCTAssertEqual(subject.weatherIcon, "04d")
 
-        let expectedStartColour = UIColor(red: 0.26, green: 0.32, blue: 0.36, alpha: 1.00)
-        let expectedEndColour = UIColor(red: 0.19, green: 0.47, blue: 0.80, alpha: 1.00)
+        let expectedStartColour = UIColor(hex: "#8aa3b4")!
+        let expectedEndColour = UIColor(hex: "#466fcd")!
         XCTAssertEqual(subject.startColor, expectedStartColour)
         XCTAssertEqual(subject.endColor, expectedEndColour)
     }
