@@ -20,11 +20,11 @@ final class WeatherTableViewCell: UITableViewCell {
     @IBOutlet var cityNameLabel: UILabel!
     @IBOutlet var temperatureLabel: UILabel!
     @IBOutlet var weatherImageView: UIImageView!
-    let gradientLayer = CAGradientLayer()
 
     var viewModel: WeatherTableViewModelCellType? {
         didSet {
             updateUI()
+            addBackgroundGradient()
         }
     }
 
@@ -40,7 +40,6 @@ final class WeatherTableViewCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        addBackgroundGradient()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20))
     }
 
@@ -58,6 +57,7 @@ final class WeatherTableViewCell: UITableViewCell {
                                           endColor: viewModel.endColor,
                                           startPoint: CGPoint(x: 0, y: 0),
                                           endPoint: CGPoint(x: 1, y: 1))
+
     }
 
     private func updateUI() {

@@ -105,6 +105,8 @@ extension WeatherTableViewController: UITableViewDataSource, UITableViewDelegate
             let weatherViewModelCell = WeatherTableViewModelCell(weatherParameters: weatherParameters[indexPath.row])
             cell.viewModel = weatherViewModelCell
         }
+        
+        
         return cell
     }
 
